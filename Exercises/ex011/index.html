@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e  diminua o tamanho do seu navegador
+    </p>
+     <!--A tag picture ajuda a englobar imagens que podem apresentar tamanhos diferentes no navegador-->
+    <picture>
+        <source media="(max-width:750px)" srcset="img/fotoP.png" type="image/png">
+        <source media="(max-width:1050px)"srcset="img/fotoM.png"type="image/png">
+        <img src="img/fotoG.png" alt="">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Aperte o play e escute o dj snake</p>
+    <audio src="midia/eletronic.mp3"controls autoplay></audio>
+
+    <!-- Formatos suportados pelo navegador MP3 WAV OGG -->
+    <p>Mesma música com o código diferente.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/eletronic.mp3" type="audio/mpeg">
+        <source src="midia/eletronic.mp3" type="audio/ogg">
+        <source src="midia/eletronic.mp3" type="audio/wav">
+    </audio>
+    <p>Se não tocar pelo navegador <a href="midia/eletronic.mp3">baixe aqui!</a></p> 
+    
+</body>
+</html>
